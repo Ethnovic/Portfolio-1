@@ -1,0 +1,59 @@
+ .la {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            max-width: 900px;
+            margin: 30px auto;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #0001;
+            padding: 30px;
+            flex-wrap: wrap;
+        }
+        .la .image {
+            width: 220px;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 2px 8px #0002;
+        }
+        .la p {
+            color: #222;
+            font-size: 1.05rem;
+            margin-bottom: 12px;
+        }
+        header h1 {
+            text-align: center;
+            color: blue;
+            margin: 20px 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: blue;
+        }
+        @media (max-width: 700px) {
+            .la {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px;
+            }
+            .la .image {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
